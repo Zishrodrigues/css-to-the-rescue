@@ -32,6 +32,23 @@ p {
   font-size: 1em;
 }
 
+/* BUTTONS */
+button {
+  background-color: #ffffff;
+  border: none;
+  padding: 1em;
+  border-radius: 1em;
+  color: #007D70;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007D70;
+  color: #ffffff;
+  border: 0.1em currentColor solid;
+}
+
 /* NAV */
 nav h1 {
   color: #ffffff;
@@ -108,7 +125,7 @@ article img {
 
 /* STEP INDICATOR */
 
-.stepIndicator {
+.stepIndicator, form {
   background-color: #007D70;
   margin: 1em 0;
   border-radius: 1em;
@@ -134,6 +151,34 @@ article img {
   color: #ffffff;
 }
 
+/* FORM */
+form {
+  padding: 1em;
+}
+
+form label {
+  margin: 1em 0 0 0;
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  margin: 0.2em 0 0 0;
+}
+
+form input[type="checkbox"] {
+  border: 1px red dashed;
+  width: auto;
+}
+
+form a {
+  display: block;
+  color: #b2d8d4;
+  font-size: 0.8em;
+  margin: 0.5em 0 0.5em 0;
+}
 
 /* MEDIA QUERIES */
 @media (min-width: 37em) {
