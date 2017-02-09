@@ -180,6 +180,24 @@ form a {
   margin: 0.5em 0 0.5em 0;
 }
 
+/* RATING */
+fieldset {
+  border: none;
+}
+
+fieldset .rating {
+  display: flex;
+  flex-direction: row;
+}
+
+fieldset .rating label {
+  flex-grow: 1;
+}
+
+fieldset .rating input {
+  opacity: 0;
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 37em) {
   nav ul li {
