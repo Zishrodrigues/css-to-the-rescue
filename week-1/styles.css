@@ -12,6 +12,7 @@ body {
 .contentWrapper {
   max-width: 45em;
   margin: 0 auto;
+  padding: 1.5em;
 }
 
 /* TYPOGRAPHY */
@@ -23,9 +24,8 @@ a {
 }
 
 h1 {
-  margin: 20px;
   font-size: 2em;
-  margin: 0.5em 0em 0.5em 0;
+  margin: 1em 0 0 0;
 }
 
 p {
@@ -98,13 +98,42 @@ nav ul li ul li a:hover {
 
 /* ARTICLE */
 article {
-  padding: 1.5em;
+  padding: 0;
 }
 
 article img {
   width: 100%;
   margin:  1em 0;
 }
+
+/* STEP INDICATOR */
+
+.stepIndicator {
+  background-color: #007D70;
+  margin: 1em 0;
+  border-radius: 1em;
+}
+
+.stepIndicator progress {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.stepIndicator ol {
+  color: #ffffff;
+  padding: 1em 2em;
+  font-size: 1.5em;
+}
+
+.stepIndicator ol li {
+
+}
+
+.stepIndicator ol li a{
+  color: #ffffff;
+}
+
 
 /* MEDIA QUERIES */
 @media (min-width: 37em) {
