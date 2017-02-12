@@ -113,6 +113,22 @@ nav ul li ul li a:hover {
   color: #111111;
 }
 
+@media (min-width: 37em) {
+  nav ul li {
+    width: auto;
+  }
+
+  nav ul li ul {
+    display:none;
+    position: absolute;
+    background-color: #007D70;
+  }
+
+  nav ul li ul li {
+    margin: 0.5em 0 0.5em 0;
+  }
+}
+
 /* ARTICLE */
 article {
   padding: 0;
@@ -180,6 +196,27 @@ form a {
   margin: 0.5em 0 0.5em 0;
 }
 
+/* CHAT */
+.chat {
+  border: 1px red dashed;
+  display: flex;
+}
+
+.chat li {
+  border: 1px green dashed;
+  width: 100%;
+}
+
+.chat li p {
+  border: 1px orange dashed;
+  display: inline-block;
+}
+
+.chat li footer {
+  background-color: grey;
+  display: block;
+}
+
 /* RATING */
 fieldset {
   border: none;
@@ -196,21 +233,4 @@ fieldset .rating label {
 
 fieldset .rating input {
   opacity: 0;
-}
-
-/* MEDIA QUERIES */
-@media (min-width: 37em) {
-  nav ul li {
-    width: auto;
-  }
-
-  nav ul li ul {
-    display:none;
-    position: absolute;
-    background-color: #007D70;
-  }
-
-  nav ul li ul li {
-    margin: 0.5em 0 0.5em 0;
-  }
 }
