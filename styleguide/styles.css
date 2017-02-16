@@ -1,12 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: sans-serif;
   color: #111111;
+  padding:0;
+  margin:0;
 }
 
 .contentWrapper {
@@ -18,18 +14,19 @@ body {
 /* TYPOGRAPHY */
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: bold;
   color: #111111;
 }
 
 h1 {
   font-size: 2em;
-  margin: 1em 0 0 0;
+  margin: 0;
 }
 
 p {
   font-size: 1em;
+  margin: 0;
 }
 
 /* BUTTONS */
@@ -43,7 +40,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:hover, button:focus {
   background-color: #007D70;
   color: #ffffff;
   border: 0.1em currentColor solid;
@@ -129,20 +126,54 @@ nav ul li ul li a:hover {
   }
 }
 
-/* ARTICLE */
+/* MEDIA ITEM */
 article {
+  margin: 1em 0;
+}
+
+.picArticle {
   padding: 0;
 }
 
-article img {
+.picArticle img {
   width: 100%;
   margin:  1em 0;
+}
+
+.bigArticle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;background-color: #237F52;
+}
+
+.bigArticle > div {
+  min-width: 27em;
+  flex: 1;
+  padding: 0 1em 1em 1em;
+}
+
+.bigArticle > div:nth-child(2) {
+  padding: 0;
+}
+
+.bigArticle div h1 a {
+  font-size: calc(0.7em + 2vw);
+}
+
+.bigArticle div p {
+  padding-top: 1em;
+  font-size: calc(1em + 0.5vw);
+}
+
+.bigArticle div img {
+  width: 100%;
+  height: auto;
 }
 
 /* STEP INDICATOR */
 
 .stepIndicator, form {
-  background-color: #007D70;
+  background-color: #237F52;
   margin: 1em 0;
   border-radius: 1em;
 }
@@ -182,6 +213,13 @@ form label {
 form input {
   width: 100%;
   margin: 0.2em 0 0 0;
+  padding: 0.5em;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+form input:focus {
+  border:0.2em #007D70 dashed;
 }
 
 form input[type="checkbox"] {
@@ -191,7 +229,7 @@ form input[type="checkbox"] {
 
 form a {
   display: block;
-  color: #b2d8d4;
+  color: #ffffff;
   font-size: 0.8em;
   margin: 0.5em 0 0.5em 0;
 }
