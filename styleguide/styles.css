@@ -200,6 +200,7 @@ article:first-of-type div img {
   overflow: hidden;
   position: relative;
   flex: 1;
+  min-width:100%;
 }
 
 .picArticle figure h1 {
@@ -228,6 +229,12 @@ article:first-of-type div img {
 .picArticle img {
   width: 100%;
   margin:  1em 0;
+}
+
+@media (min-width: 45em) {
+  .picArticle figure {
+    min-width: 0;
+  }
 }
 
 /* STEP INDICATOR */
