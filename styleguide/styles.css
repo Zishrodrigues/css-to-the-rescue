@@ -186,11 +186,43 @@ article:first-of-type div img {
 
 /* PICTURE WITH TEXT */
 .picArticle {
-
+ width: 100%;
+ padding-left: 0;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
 }
 
 .picArticle figure {
   margin: 0;
+  padding:0;
+  max-height: 80vh;
+  overflow: hidden;
+  position: relative;
+  flex: 1;
+}
+
+.picArticle figure h1 {
+  position: absolute;
+  display: block;
+  color: #ffffff;
+  padding: 1em;
+  border-radius: 1em;
+  top: 2em;
+  left:2em;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.picArticle figure img {
+  margin: 0;
+  height: auto;
+  width: 100%;
+}
+
+.picArticle figcaption {
+  flex: 1;
+  align-self: center;
+  padding: 1.5em;
 }
 
 .picArticle img {
