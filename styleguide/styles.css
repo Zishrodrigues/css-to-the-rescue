@@ -166,6 +166,15 @@ article div h1 a {
   color: #111111;
 }
 
+article div h1 a:after {
+  position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	content: '';
+}
+
 article:first-of-type > div:nth-child(2) {
   min-height: 20em;
 }
