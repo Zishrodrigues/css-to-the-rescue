@@ -127,14 +127,37 @@ nav ul li ul li a:hover {
 }
 
 /* MEDIA ITEM */
-article {
-  margin: 1em 0;
+article > div:nth-child(2) {
+  background-image: url("https://vasilis.nl/voto/fotos/klein/161001180558-de-boot-gemist-150.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 14em;
+}
+
+article, .articleWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.articleWrapper {
+  margin: 0.5em 0;
+}
+
+.articleWrapper > article {
+  display: block;
+  min-width: 30%;
+  flex: 1;
+}
+
+.articleWrapper article img {
+
 }
 
 .bigArticle {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;background-color: #237F52;
+  margin: 1em 0;
+  background-color: #237F52;
   color: #ffffff;
 }
 
