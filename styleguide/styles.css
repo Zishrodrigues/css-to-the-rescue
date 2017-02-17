@@ -127,6 +127,28 @@ nav ul li ul li a:hover {
 }
 
 /* MEDIA ITEM */
+.articleWrapper, article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.articleWrapper > article {
+  flex: 1;
+}
+
+article {
+  margin: 1em 0;
+  background-color: #237F52;
+  color: #ffffff;
+}
+
+article > div {
+  padding: 1.5em;
+  flex:1;
+  min-width: 27em;
+}
+
 article > div:nth-child(2) {
   background-image: url("https://vasilis.nl/voto/fotos/klein/161001180558-de-boot-gemist-150.jpg");
   background-size: cover;
@@ -135,58 +157,29 @@ article > div:nth-child(2) {
   min-height: 14em;
 }
 
-article, .articleWrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.articleWrapper {
-  margin: 0.5em 0;
-}
-
-.articleWrapper > article {
-  display: block;
-  min-width: 30%;
-  flex: 1;
-}
-
-.articleWrapper article img {
-
-}
-
-.bigArticle {
-  margin: 1em 0;
-  background-color: #237F52;
+article div h1 a {
+  font-size: calc(1em + 0.2vw);
   color: #ffffff;
 }
 
-.bigArticle > div {
-  min-width: 27em;
-  flex: 1;
-  padding: 1.5em;
-  overflow: hidden;
+article:first-of-type {
+  min-width: 100%;
 }
 
-.bigArticle > div:nth-child(2) {
-  background-image: url("https://vasilis.nl/voto/fotos/klein/161001180558-de-boot-gemist-150.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+article:first-of-type > div:nth-child(2) {
   min-height: 20em;
 }
 
-.bigArticle div h1 a {
+article:first-of-type div h1 a {
   font-size: calc(0.7em + 3vw);
-  color: #ffffff;
 }
 
-.bigArticle div p {
+article:first-of-type div p {
   padding-top: 1em;
   font-size: calc(1em + 0.4vw);
 }
 
-.bigArticle div img {
+article:first-of-type div img {
   height: 100%;
   width: auto;
 }
