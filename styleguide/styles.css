@@ -138,15 +138,19 @@ nav ul li ul li a:hover {
 }
 
 article {
-  margin: 1em 0;
-  background-color: #237F52;
-  color: #ffffff;
+  margin: 0;
+  background-color: #ffffff;
+  color: #111111;
 }
 
 article > div {
   padding: 1.5em;
   flex:1;
   min-width: 27em;
+}
+
+article:first-of-type {
+  min-width: 100%;
 }
 
 article > div:nth-child(2) {
@@ -159,11 +163,7 @@ article > div:nth-child(2) {
 
 article div h1 a {
   font-size: calc(1em + 0.2vw);
-  color: #ffffff;
-}
-
-article:first-of-type {
-  min-width: 100%;
+  color: #111111;
 }
 
 article:first-of-type > div:nth-child(2) {
