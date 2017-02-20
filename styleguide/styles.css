@@ -84,6 +84,15 @@ nav ul li ul li a {
     position: relative;
   }
 
+  nav ul li a {
+    text-align: center;
+  }
+
+  nav ul li a:hover,
+  nav ul li a:focus {
+    border: 0.2em #ffffff dashed;
+  }
+
   nav ul li:hover > ul {
     display: block;
     position: absolute;
@@ -117,6 +126,11 @@ nav ul li ul li a {
 
 .articleWrapper > article {
   flex: 1;
+}
+
+.articleWrapper > article:hover,
+.articleWrapper > article:hover {
+  border: 0.2em #000000 dashed;
 }
 
 article {
