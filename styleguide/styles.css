@@ -214,10 +214,10 @@ article:first-of-type div img {
   position: absolute;
   display: block;
   color: #ffffff;
-  padding: 1em;
-  border-radius: 1em;
-  top: 2em;
-  left:2em;
+  text-align: center;
+  padding: 1em 0;
+  width: 100%;
+  top: 0;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
