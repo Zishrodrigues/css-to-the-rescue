@@ -309,24 +309,68 @@ form a {
 }
 
 /* CHAT */
+.chatBox {
+  background-color: #111111;
+  margin: 0.5em;
+  padding: 1em;
+}
+
 .chat {
-  border: 1px red dashed;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
 }
 
 .chat li {
-  border: 1px green dashed;
   width: 100%;
+  width: max-content;
+  border-radius: 0.7em;
+  margin: 0.4em;
+  padding: 0.5em;
+}
+
+.chat li:nth-child(odd) {
+  align-self: flex-end;
+  background-color: lightgreen;
+}
+
+.chat li:nth-child(even) {
+  background-color: lightblue;
 }
 
 .chat li p {
-  border: 1px orange dashed;
   display: inline-block;
+  margin:0;
+  padding:0;
 }
 
 .chat li footer {
   background-color: grey;
   display: block;
+  padding-top: .5em;
+  text-align: right;
+  font-size: .7em;
+  font-style: italic;
+  background-color: inherit;;
+}
+
+.chatBox form {
+  border: 1px orange dashed;
+  display: flex;
+  padding:0;
+  margin:0;
+}
+
+.chatBox form textarea {
+  margin:0 2em 0 0;
+  padding:0;
+  flex:4;
+}
+
+.chatBox form button {
+  flex:1;
 }
 
 /* RATING */
