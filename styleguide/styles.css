@@ -282,6 +282,14 @@ form {
   padding: 1em;
 }
 
+form:invalid {
+  background-color: #A52626;
+}
+
+form:valid {
+  background: #398B27;
+}
+
 form label {
   margin: 1em 0 0 0;
   display: inline-block;
