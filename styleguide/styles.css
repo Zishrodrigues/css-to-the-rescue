@@ -56,65 +56,55 @@ nav ul {
   color: inherit;
   list-style-type: none;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 nav ul li {
   color: inherit;
+  flex:1;
 }
 
 nav ul li a {
   color: inherit;
   display: block;
   padding: 0.5em 0;
+  text-align: center;
+  border: 0.2em transparent dashed;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  border: 0.2em #ffffff dashed;
 }
 
 nav ul li ul li a {
   padding: 0;
 }
 
-@media (min-width: 37em) {
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+nav ul li:hover > ul {
+  display: block;
+  position: absolute;
+  bottom: -3.5;
+  z-index: 9999;
+}
 
-  nav ul li {
-    flex: 1;
-    position: relative;
-  }
+nav ul li ul {
+  display: none;
+  padding:1em;
+  background-color: #111111;
+}
 
-  nav ul li a {
-    text-align: center;
-  }
+nav ul li ul li {
+  display: block;
+}
 
-  nav ul li a:hover,
-  nav ul li a:focus {
-    border: 0.2em #ffffff dashed;
-  }
-
-  nav ul li:hover > ul {
-    display: block;
-    position: absolute;
-    bottom: -3.5;
-    z-index: 9999;
-  }
-
-  nav ul li ul {
-    display: none;
-    padding:1em;
-    background-color: #111111;
-  }
-
-  nav ul li ul li {
-    display: block;
-  }
-
-  nav ul li ul li a {
-    color: #ffffff;
-    display: block;
-    padding: 0.5em;
-  }
+nav ul li ul li a {
+  color: #ffffff;
+  display: block;
+  padding: 0.5em;
 }
 
 /* MEDIA ITEM */
@@ -126,6 +116,7 @@ nav ul li ul li a {
 
 .articleWrapper > article {
   flex: 1;
+  border: 0.2em transparent dashed;
 }
 
 .articleWrapper > article:hover,
@@ -145,7 +136,7 @@ article {
 article > div {
   padding: 1.5em;
   flex:1;
-  min-width: 27em;
+  min-width: 15em;
 }
 
 article:first-of-type {
@@ -373,6 +364,7 @@ form a {
   display: flex;
   padding:0;
   margin:0;
+  background-color: transparent;
 }
 
 .chatBox form textarea {
