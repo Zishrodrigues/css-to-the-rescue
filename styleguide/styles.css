@@ -272,8 +272,12 @@ article:first-of-type div img {
 }
 
 .stepIndicator ol li a {
-  color: inherit;
-  border:1px red dashed;
+  color: #7baaf7;
+}
+
+.stepIndicator ol li a:hover,
+.stepIndicator ol li a:focus {
+  border: 0.2em #ffffff dashed;
 }
 
 /* FORM */
