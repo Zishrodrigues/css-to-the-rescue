@@ -118,8 +118,16 @@ nav ul li ul li a {
 /* MEDIA ITEM */
 .articleWrapper, article {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+}
+
+@media (min-width: 45em) {
+  .articleWrapper, article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .articleWrapper > article {
@@ -151,11 +159,19 @@ article:first-of-type {
   min-width: 90%;
 }
 
+article:first-of-type > div:nth-child(2) {
+  background-image: url('http://www.froot.nl/wp-content/uploads/2015/03/De-Nachtwacht.png');
+}
+
 article > div:nth-child(2) {
   background-image: url("https://vasilis.nl/voto/fotos/klein/161001180558-de-boot-gemist-150.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 14em;
+}
+
+article > div:nth-child(1) {
   min-height: 14em;
 }
 
@@ -195,8 +211,14 @@ article:first-of-type div img {
 .picArticle {
  padding-left: 0;
  display: flex;
- flex-direction: row;
+ flex-direction: column;
  flex-wrap: wrap;
+}
+
+@media (min-width: 45em) {
+  .picArticle {
+   flex-direction: row;
+  }
 }
 
 .picArticle figure {
@@ -263,7 +285,14 @@ article:first-of-type div img {
 .stepIndicator ol {
   color: #ffffff;
   display: flex;
+  flex-direction: column;
   max-width: 100%;
+}
+
+@media (min-width: 55em) {
+  .stepIndicator ol {
+    flex-direction: row;
+  }
 }
 
 .stepIndicator ol li {
@@ -346,7 +375,6 @@ form a:focus {
   flex-wrap: wrap;
   flex-direction: column;
   list-style: none;
-  padding: 0;
 }
 
 .chat li {
@@ -469,8 +497,14 @@ fieldset .rating input {
 /* HELPERS */
 .componentsWrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+}
+
+@media (min-width: 45em) {
+  .componentsWrapper {
+    flex-direction: row;
+  }
 }
 
 @keyframes rotate {
