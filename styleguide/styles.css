@@ -43,13 +43,13 @@ button {
   border: none;
   padding: 1em;
   border-radius: 1em;
-  color: #007D70;
+  color: #111111;
   font-weight: bold;
   cursor: pointer;
 }
 
 button:hover, button:focus {
-  background-color: #007D70;
+  background-color: #111111;
   color: #ffffff;
   border: 0.1em currentColor solid;
 }
@@ -310,12 +310,12 @@ form input {
 }
 
 form input:focus {
-  border:0.2em #007D70 dashed;
+  border:0.3em #111111 dashed;
 }
 
 form input[type="checkbox"] {
-  border: 1px red dashed;
   width: auto;
+  border:0.3em #111111 dashed;
 }
 
 form a {
@@ -323,6 +323,10 @@ form a {
   color: #ffffff;
   font-size: 0.8em;
   margin: 0.5em 0 0.5em 0;007D70
+}
+
+form a:focus {
+  border: 0.3em #111111 dashed;
 }
 
 /* CHAT */
