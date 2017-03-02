@@ -163,6 +163,14 @@ article:first-of-type > div:nth-child(2) {
   background-image: url('http://www.froot.nl/wp-content/uploads/2015/03/De-Nachtwacht.png');
 }
 
+article:nth-child(2) > div:nth-child(2) {
+  background-image: url('http://nl.dice.com/technieuws/wp-content/uploads/2014/04/Everyone-should-code-1.jpg');
+}
+
+article:nth-child(5) > div:nth-child(2) {
+  background-image: url('https://cdn.pixabay.com/photo/2016/07/04/18/16/sun-flower-1497092_960_720.jpg');
+}
+
 article > div:nth-child(2) {
   background-image: url("https://vasilis.nl/voto/fotos/klein/161001180558-de-boot-gemist-150.jpg");
   background-size: cover;
