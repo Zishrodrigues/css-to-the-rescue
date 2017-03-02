@@ -237,6 +237,10 @@ article:first-of-type div img {
 
 /* STEP INDICATOR */
 
+.stepIndicator {
+  flex:1;
+}
+
 .stepIndicator, form {
   background-color: #111111;
   margin: 0.5em;
@@ -317,6 +321,7 @@ form a {
   background-color: #111111;
   margin: 0.5em;
   padding: 1em;
+  flex:1;
 }
 
 .chat {
@@ -410,4 +415,11 @@ input[type="radio"]:checked+label {
 
 fieldset .rating input {
   display: none;
+}
+
+/* HELPERS */
+.componentsWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
