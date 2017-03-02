@@ -19,9 +19,17 @@ a {
   color: #111111;
 }
 
+a:focus {
+  border: 0.1em #111111 dashed;
+}
+
 h1 {
   font-size: 2em;
   margin: 0;
+}
+
+h1:focus {
+  border: 0.1em #111111 dashed;
 }
 
 p {
@@ -265,6 +273,7 @@ article:first-of-type div img {
 
 .stepIndicator ol li a {
   color: inherit;
+  border:1px red dashed;
 }
 
 /* FORM */
@@ -436,7 +445,7 @@ fieldset .rating input {
   width:100%;
   height: 100%;
   top:0;
-  left:0;
+  left:-110vw;
   right:0;
   bottom:0;
   opacity:0;
@@ -471,11 +480,14 @@ fieldset .rating input {
 @keyframes overlay {
   0% {
     opacity: 1;
+    left:0;
   }
   80% {
     opacity: 1;
+    left:0;
   }
   100% {
     opacity: 0;
+    left:-110vw;
   }
 }
