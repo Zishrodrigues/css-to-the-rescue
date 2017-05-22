@@ -1,0 +1,179 @@
+.blogPost {
+    background-color: #e6e7e8;
+    margin: 1em auto;
+    position: relative;
+    max-width: 90%;
+    padding: 0 0 5em 0;
+    border: none;
+    display: block;
+}
+
+@media (min-width: 90em) {
+
+    .blogPost {
+        max-width: 55em;
+    }
+}
+
+.blogPost h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+    background-color: #ef4581;
+    color: #e6e7e8;
+    padding: 1em;
+}
+
+@media (min-width: 45em) {
+
+    .blogPost h1 {
+        font-size: 2em;
+    }
+}
+
+.blogPost p {
+    text-align: left;
+    font-size: 1.2em;
+    margin: 0 auto;
+    padding: 0.5em;
+    max-width: 35em;
+    background-color: transparent;
+    color: #111111;
+    display: block;
+}
+
+.blogPost p:first-of-type {
+    font-style: italic;
+    background-color: #f27c21;
+    color: #ffffff;
+    margin: 1em auto;
+    padding: 1em;
+}
+
+.blogPost .figureWrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 41em;
+    padding:0;
+    margin:0.5em auto;
+}
+
+@media (min-width: 30em) {
+
+    .blogPost .figureWrapper {
+        flex-direction: row;
+    }
+}
+
+.blogPost figure {
+    margin:0;
+    position: relative;
+    height: 15em;
+    overflow: hidden;
+}
+
+@media (min-width: 30em) {
+
+    .blogPost figure {
+        overflow: inherit;
+    }
+}
+
+.blogPost figure h1 {
+    position: absolute;
+    max-width: 100%;
+    font-size: 1em;
+}
+
+.blogPost figure img:first-of-type {
+    height: auto;
+    width:100%;
+}
+
+@media (min-width: 30em) {
+
+    .blogPost figure img:first-of-type {
+        max-height: 100%;
+        width:auto;
+    }
+}
+
+.blogPost figcaption p:first-of-type {
+    font-size: 1em;
+    margin:0;
+}
+
+@media (min-width: 30em) {
+
+    .blogPost figcaption p:first-of-type {
+        margin: 2em 0 0 0;
+    }
+}
+
+
+.blogPost figcaption footer {
+    font-size: 1em;
+    margin:0;
+    background-color: #fcd837;
+    padding: 1em;
+}
+
+/* RATING */
+.fieldset {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ef4581;
+    padding: 1rem;
+    margin: 1rem 0 1rem 1rem;
+    border-radius: .1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.27);
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 50%;
+    max-width: 15rem;
+}
+
+.fieldset:after {
+    content: '← Rate!';
+    position: absolute;
+    right: -4rem;
+}
+
+.fieldset legend {
+    -webkit-box-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%;
+    text-align: center;
+    display: none;
+}
+
+.fieldset label {
+    width: 10%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.fieldset svg {
+    width: 100%;
+    display: block;
+}
+
+.fieldset input:checked + label {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.fieldset input:hover + label {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.fieldset input {
+    position: absolute;
+    left: -999999px;
+}
+
+.fieldset input:focus + label {
+    outline: 3px solid yellowgreen;
+}
