@@ -135,10 +135,19 @@
 }
 
 .fieldset:after {
-    content: '← Rate!';
+    content: 'Rate this article';
     position: absolute;
-    right: -4rem;
+    right: 0.2em;
+    top: -2em;
     color: #ef4581;
+}
+
+@media (min-width: 90em) {
+    .fieldset:after {
+        content: '< Rate this article';
+        right: -8em;
+        top: 1em;
+    }
 }
 
 .fieldset legend {
@@ -177,4 +186,14 @@
 
 .fieldset input:focus + label {
     outline: 3px solid yellowgreen;
+}
+
+/* HELPERS */
+.backButton {
+    position: absolute;
+    bottom: -3em;
+    right:0;
+    padding: 1em;
+    display: inline-block;
+    color: #ffffff;
 }
