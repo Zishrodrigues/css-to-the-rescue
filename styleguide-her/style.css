@@ -189,11 +189,19 @@ article:first-of-type > div:nth-child(2) {
 }
 
 article:nth-child(2) > div:nth-child(2) {
-  background-image: url('http://nl.dice.com/technieuws/wp-content/uploads/2014/04/Everyone-should-code-1.jpg');
+  background-image: url('https://i.vimeocdn.com/portrait/18817105_300x300');
+}
+
+article:nth-child(3) > div:nth-child(2) {
+  background-image: url('https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/8/005/086/252/21e7fd5.jpg');
+}
+
+article:nth-child(4) > div:nth-child(2) {
+  background-image: url('https://media.licdn.com/media-proxy/ext?w=800&h=800&hash=F57zLpL6PiPwuHtQA0qQPFzq9OM%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta9Er0Vinkhwfjw8177yE41y87UNCVordEGXyD3u0qYrdfyHpepTeKrWhuVkVfHgclAM6KfKhR2K3D5K9eN7pfN9z3sbkJI24ZxUBbFI8lWxI');
 }
 
 article:nth-child(5) > div:nth-child(2) {
-  background-image: url('https://cdn.pixabay.com/photo/2016/07/04/18/16/sun-flower-1497092_960_720.jpg');
+  background-image: url('https://peterpeerdeman.nl/img/peterpeerdeman.jpg');
 }
 
 article > div:nth-child(2) {
@@ -260,11 +268,11 @@ form {
   padding: 1em;
 }
 
-form:invalid {
+.loginForm:invalid {
   border: 1em #A52626 solid;
 }
 
-form:valid {
+.loginForm:valid {
   border: 1em #398B27 solid;
 }
 
@@ -316,7 +324,7 @@ form a:focus {
   bottom:0;
   opacity:0;
   background: rgba(00, 00, 00, 0.9);
-  animation: overlay 2s linear;
+  animation: overlay 0.5s linear;
 }
 
 .loadingOverlay img {
@@ -360,6 +368,6 @@ form a:focus {
   }
   100% {
     opacity: 0;
-    left:-110vw;
+    left:0;
   }
 }
