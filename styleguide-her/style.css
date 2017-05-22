@@ -44,7 +44,7 @@ p {
   margin: 0;
 }
 
-/* BUTTONS */
+/* `BUTTON`S */
 button {
   background-color: #ffffff;
   border: none;
@@ -53,10 +53,11 @@ button {
   color: #111111;
   font-weight: bold;
   cursor: pointer;
+  border: 0.1em #ffffff solid;
 }
 
 button:hover, button:focus {
-  background-color: #111111;
+  background-color: #fcd837;
   color: #ffffff;
   border: 0.1em currentColor solid;
 }
@@ -248,54 +249,11 @@ article:first-of-type div img {
   width: auto;
 }
 
-/* STEP INDICATOR */
-
-.stepIndicator {
-  flex:1;
-}
-
-.stepIndicator, form {
-  background-color: #111111;
-  margin: 0.5em;
-  padding: 1.5em;
-}
-
-.stepIndicator progress {
-  width: 100%;
-  margin: 0.5em 0;
-}
-
-.stepIndicator ol {
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-}
-
-@media (min-width: 55em) {
-  .stepIndicator ol {
-    flex-direction: row;
-  }
-}
-
-.stepIndicator ol li {
-  color: inherit;
-  width: 25%;
-}
-
-.stepIndicator ol li a {
-  color: #7baaf7;
-}
-
-.stepIndicator ol li a:hover,
-.stepIndicator ol li a:focus {
-  border: 0.2em #ffffff dashed;
-}
-
 /* FORM */
 .loginForm {
   max-width: 30em;
   margin: 2em auto;
+  background-color: #f27c21;
 }
 
 form {
@@ -303,11 +261,11 @@ form {
 }
 
 form:invalid {
-  background-color: #A52626;
+  border: 1em #A52626 solid;
 }
 
 form:valid {
-  background: #398B27;
+  border: 1em #398B27 solid;
 }
 
 form label {
@@ -326,12 +284,12 @@ form input {
 }
 
 form input:focus {
-  border:0.3em #111111 dashed;
+  border:0.3em #fcd837 solid;
 }
 
 form input[type="checkbox"] {
   width: auto;
-  border:0.3em #111111 dashed;
+  border:0.1em #fcd837 dashed;
 }
 
 form a {
@@ -342,82 +300,7 @@ form a {
 }
 
 form a:focus {
-  border: 0.3em #111111 dashed;
-}
-
-/* CHAT */
-.chatBox {
-  background-color: #111111;
-  margin: 0.5em;
-  padding: 1em;
-  flex:1;
-}
-
-.chat {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  list-style: none;
-}
-
-.chat li {
-  width: 100%;
-  width: max-content;
-  border-radius: 0.7em;
-  margin: 0.4em;
-  padding: 0.5em;
-}
-
-.chat li:nth-child(odd) {
-  align-self: flex-end;
-  background-color: lightgreen;
-}
-
-.chat li:nth-child(even) {
-  background-color: lightblue;
-}
-
-.chat li p {
-  display: inline-block;
-  margin:0;
-  padding:0;
-}
-
-.chat li footer {
-  background-color: grey;
-  display: block;
-  padding-top: .5em;
-  text-align: right;
-  font-size: .7em;
-  font-style: italic;
-  background-color: inherit;;
-}
-
-.chatBox form {
-  display: flex;
-  padding:0;
-  margin:0;
-  background-color: transparent;
-}
-
-.chatBox form textarea {
-  margin:0 2em 0 0;
-  padding:0.5em;
-  flex:4;
-  background-color: inherit;
-  resize: none;
-  border: 0.2em #ffffff solid;
-  color: #ffffff;
-  font-size: 1.2em;
-}
-
-.chatBox form textarea:hover,
-.chatBox form textarea:focus {
-  border: 0.2em #ffffff dashed;
-}
-
-.chatBox form button {
-  flex:1;
+  border: 0.3em #fcd837 solid;
 }
 
 /* LOADING */

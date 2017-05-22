@@ -138,6 +138,7 @@
     content: '← Rate!';
     position: absolute;
     right: -4rem;
+    color: #ef4581;
 }
 
 .fieldset legend {
@@ -149,9 +150,9 @@
 }
 
 .fieldset label {
-    width: 10%;
+    width: 15%;
     cursor: pointer;
-    transition: .3s;
+    transition: .2s;
 }
 
 .fieldset svg {
@@ -171,7 +172,7 @@
 
 .fieldset input {
     position: absolute;
-    left: -999999px;
+    left: -9999px;
 }
 
 .fieldset input:focus + label {
